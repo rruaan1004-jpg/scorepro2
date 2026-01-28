@@ -3,85 +3,143 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Score Pro</title>
+
+<title>Score Pro | Aumente seu Score</title>
 
 <style>
 body{
-font-family: Arial, sans-serif;
+font-family: system-ui, -apple-system, Arial;
 margin:0;
+background:#f8fafc;
+color:#1e293b;
 text-align:center;
-color:#222;
 }
 
+/* layout */
 .section{
-padding:70px 20px;
-max-width:700px;
+padding:80px 20px;
+max-width:800px;
 margin:auto;
 }
 
-.gray{background:#f5f5f5;}
-
-.offer{
-background:#16a34a;
-color:white;
+.hero{
+background:white;
 }
 
-button{
+.gray{
+background:#eef2f7;
+}
+
+.offer{
+background:linear-gradient(135deg,#16a34a,#15803d);
+color:white;
+border-radius:20px;
+margin:40px 15px;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+h2{
+margin-bottom:25px;
+}
+
+p{
+font-size:18px;
+}
+
+/* cards */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:18px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+font-weight:600;
+}
+
+/* botão */
+.btn{
 background:#111;
 color:white;
-border:none;
-padding:15px 28px;
-border-radius:10px;
+padding:16px 30px;
+border-radius:12px;
+display:inline-block;
+margin-top:25px;
+text-decoration:none;
 font-size:18px;
-margin-top:20px;
-cursor:pointer;
+font-weight:bold;
+box-shadow:0 6px 18px rgba(0,0,0,0.2);
 }
 
 .price{
-font-size:30px;
+font-size:36px;
 font-weight:bold;
-margin:15px 0;
+margin:20px 0;
+}
+
+.small{
+font-size:14px;
+opacity:.8;
+margin-top:20px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="section">
+<!-- HERO -->
+<div class="section hero">
 <h1>Aumente seu Score e volte a ter crédito aprovado</h1>
-<p>Método simples e prático para organizar seu CPF e liberar crédito mais rápido.</p>
-<a href="https://pay.hotmart.com/N99318938V?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=&src=v3_f17e83a8-9551-4983-ab4d-93d4ba8d0ab5_68b9a7e6fa3cc8ac2de85eaf_0_s-1&bid=1769609178616I"><button>Quero acesso imediato</button></a>
+<p>Método simples, prático e direto para organizar seu CPF e liberar crédito mais rápido.</p>
+<a href="https://pay.hotmart.com/N99318938V?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=&src=v3_f17e83a8-9551-4983-ab4d-93d4ba8d0ab5_68b9a7e6fa3cc8ac2de85eaf_0_s-1&bid=1769609178616" class="btn">Quero acesso imediato</a>
 </div>
 
+<!-- PROBLEMAS -->
 <div class="section gray">
 <h2>Seu score está te travando?</h2>
-<p>
-❌ Cartão recusado<br>
-❌ Limite baixo<br>
-❌ Financiamento negado<br>
-❌ Bancos dizendo “não”
-</p>
+
+<div class="cards">
+<div class="card">❌ Cartão recusado</div>
+<div class="card">❌ Limite baixo</div>
+<div class="card">❌ Financiamento negado</div>
+<div class="card">❌ Bancos dizendo “não”</div>
+</div>
 </div>
 
+<!-- SOLUÇÃO -->
 <div class="section">
-<h2>Existe um passo a passo simples</h2>
-<p>
-✅ Como o score funciona<br>
-✅ O que faz subir<br>
-✅ O que derruba<br>
-✅ Método prático
-</p>
+<h2>O método mostra exatamente o que fazer</h2>
+
+<div class="cards">
+<div class="card">✅ Como o score realmente funciona</div>
+<div class="card">✅ O que faz subir rápido</div>
+<div class="card">✅ O que derruba sua pontuação</div>
+<div class="card">✅ Passo a passo prático</div>
+</div>
 </div>
 
+<!-- OFERTA -->
 <div class="section offer">
 <h2>📲 Acesso imediato após o pagamento</h2>
-<p>Comprou → recebe na hora</p>
-<div class="price">Apenas R$47</div>
-<a href="https://pay.hotmart.com/N99318938V?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=&src=v3_f17e83a8-9551-4983-ab4d-93d4ba8d0ab5_68b9a7e6fa3cc8ac2de85eaf_0_s-1&bid=1769609178616"><button>Quero meu acesso agora</button></a>
-</div>
+<p>Comprou → recebe na hora → começa hoje mesmo</p>
 
-<div class="section">
+<div class="price">Apenas R$47</div>
+
+<a href="https://pay.hotmart.com/N99318938V?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&xcod=&sck=&src=v3_f17e83a8-9551-4983-ab4d-93d4ba8d0ab5_68b9a7e6fa3cc8ac2de85eaf_0_s-1&bid=1769609178616" class="btn">Quero meu acesso agora</a>
+
+<div class="small">
 🔒 Compra segura • Liberação automática • Pagamento protegido
+</div>
 </div>
 
 </body>
